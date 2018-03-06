@@ -1,0 +1,73 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+  <title>Getting Started Extension's Popup</title>
+  <style type="text/css">
+    body {
+      margin: 10px;
+      white-space: nowrap;
+      min-width: 640px;
+      border: solid 1px #EFEFEF;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 15px;
+    }
+
+    .container {
+      border: 1px solid #EAEAEA;
+      padding: 10px 20px;
+      font-size: 15px;
+      height: 20px;
+    }
+
+    .container #searchbox {
+      
+      border: 1px solid #EAEAEA;
+      width: 30%;
+      height: 15px;
+      font-size: 15px;
+    }
+
+    #wiki-holder {
+      width: 100%;
+      border-style: none;
+      height: 800px;
+    }
+  </style>
+
+  <script src="popup.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <div class="container">
+        <span>Choose Language</span>
+        <select id="dropdown">
+          <option selected disabled hidden value=''></option>
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Chinese">Chinese</option>
+        </select>
+
+        <span>Quick Search</span>
+        <input type="text" placeholder="Search" id="searchbox">
+    </div>
+
+    <div>
+        <iframe src="https://en.m.wikipedia.org/wiki/Main_Page" id="wiki-holder" name="wiki-frame"></iframe>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
