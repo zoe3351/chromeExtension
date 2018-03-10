@@ -6,7 +6,13 @@
 This is a Chrome Plugin that allow quick Wikipedia keyword search in webpages without turn to Wikipedia homepage and search. 
 
 #### How to install:
-Open <chrome://extensions/> in your Chrome browser, check the box of **Developer mode**, then click on **Load unpacked extensions**, and browse to the folder of this extension. You will see a plugin called **Quick WIKI**, remember make sure the Box **Enabled** is checked.
+
+1. First git clone this repo to your computer
+```
+git clone https://github.com/zoe3351/chromeExtension.git
+```
+
+2. Then open <chrome://extensions/> in your Chrome browser, check the box of **Developer mode**, then click on **Load unpacked extensions**, and browse to the folder of this extension. You will see a plugin called **Quick WIKI**, remember make sure the Box **Enabled** is checked.
 
 #### How to use:
 
