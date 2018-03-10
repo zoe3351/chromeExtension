@@ -34,6 +34,7 @@ function getCurrentTabUrl(callback) {
 var keyword = "";
 var language = "English";
 
+// Add eventListener to page on select language and search contents
 document.addEventListener('DOMContentLoaded', () => {
   getCurrentTabUrl((url) => {
 
